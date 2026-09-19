@@ -1,4 +1,4 @@
-# matthewgoodbred
+# matthewgoodbred.github.io
 
 Personal academic website — plain static HTML and one stylesheet. No build step, no
 dependencies. Open `index.html` in a browser to preview, or serve the folder:
@@ -36,10 +36,8 @@ can be linked directly.
 
 ## Deploying to GitHub Pages
 
-Push to `main`, then in the repository settings enable Pages with source
-*Deploy from a branch* → `main` / `/ (root)`.
+Pages is configured to deploy from `main` / `/ (root)`, so pushing to `main` publishes
+the site at <https://matthewgoodbred.github.io/>. Give it a minute after each push.
 
-Note: this repo is named `matthewgoodbred`, so Pages will serve it at
-`https://matthewgoodbred.github.io/matthewgoodbred/`. To get the bare
-`https://matthewgoodbred.github.io/` instead, the repo must be named
-`matthewgoodbred.github.io`.
+The repo name must stay `matthewgoodbred.github.io` — that exact name is what makes
+GitHub serve it at the bare domain rather than under a subpath.
