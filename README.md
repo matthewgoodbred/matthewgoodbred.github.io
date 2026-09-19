@@ -19,6 +19,8 @@ assets/img/            Figures and photos
 assets/cv/             cv.tex source; put the compiled PDF here as Goodbred_CV.pdf
 ```
 
+See [EDITING.md](EDITING.md) for a full guide to editing and publishing the site.
+
 ## Adding things
 
 **A photo or figure** — drop the file in `assets/img/` and point the `<img src>` at it.
