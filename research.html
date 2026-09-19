@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Matthew Goodbred</title>
+<meta name="description" content="Research on pulsar magnetospheres, the diocotron instability, and relativistic magnetic reconnection.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Matthew Goodbred</a>
+    <nav class="nav">
+      <a href="index.html">About</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <h1>Research</h1>
+    <div class="prose">
+      <p class="lead">
+        I study the kinetic plasma physics of compact objects — the regime where the
+        collective behavior of a relativistic plasma, rather than any fluid description of
+        it, sets what the object does and what we see. Most of my work is done with
+        first-principles particle-in-cell simulations, backed where possible by analytic
+        theory.
+      </p>
+    </div>
+
+    <!-- ================= PULSAR MAGNETOSPHERES ================= -->
+    <section id="pulsar-magnetospheres">
+      <h2 class="section-title">Pulsar magnetospheres</h2>
+
+      <div class="prose">
+        <p>
+          A rotating, magnetized neutron star pulls charge off its surface and fills the
+          space around it with plasma. In the closed zone — the region of field lines that
+          return to the star — that plasma cannot escape, and it settles into a
+          <em>disk-dome</em> equilibrium: a dense equatorial disk of one sign of charge,
+          with domes of the opposite sign over each pole. This configuration is a
+          textbook solution, but it is not stable.
+        </p>
+        <p>
+          Using 3D particle-in-cell simulations with <em>Tristan-MP v2</em>, I follow
+          aligned and oblique magnetospheres from that equilibrium into the nonlinear
+          state of the <strong>diocotron instability</strong>, the non-neutral plasma
+          analogue of the Kelvin–Helmholtz instability, driven by the shear in the
+          <strong>E</strong> × <strong>B</strong> rotation of the trapped charge. The
+          instability saturates into a long-lived <em>m</em> = 1 mode that carries a few
+          percent of the central point charge and survives for many rotation periods.
+        </p>
+        <p>
+          What makes this more than a curiosity is the transport it drives. I derived a
+          quasilinear radial diffusion coefficient for the stochastic motion of charge
+          across field lines in the saturated state, and built a multipole framework
+          relating the diocotron charge moments to perturbations of the polar-cap
+          potential and the emission beam. That chain connects a closed-zone instability
+          to observables: nulling, periodic amplitude modulation, and drifting subpulses.
+        </p>
+      </div>
+
+      <figure class="figure-block">
+        <img src="assets/img/pulsar-magnetosphere.webp"
+             alt="Three-dimensional volume rendering of an aligned pulsar magnetosphere, showing the equatorial charge disk in blue, the polar domes and outflow in red and orange, and magnetic field lines traced in white.">
+        <figcaption>
+          <!-- TODO: tighten this caption to say exactly what is plotted. -->
+          Volume rendering of the charge density in a 3D particle-in-cell simulation of an
+          aligned pulsar magnetosphere. The equatorial disk (blue) and the polar domes
+          (red/orange) hold opposite signs of charge; white curves trace magnetic field
+          lines threading the closed zone.
+        </figcaption>
+      </figure>
+
+      <div class="prose">
+        <p>
+          The animation below shows the evolution of the magnetosphere through the onset
+          and saturation of the instability.
+        </p>
+      </div>
+
+      <div class="video">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/nO2B5gv5Gww"
+          title="Particle-in-cell simulation of a pulsar magnetosphere"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <p class="prose" style="font-size:0.87rem;color:var(--muted)">
+        <!-- TODO: describe what the viewer is looking at. -->
+        3D particle-in-cell simulation of an aligned pulsar magnetosphere.
+      </p>
+    </section>
+
+    <!-- ================= MAGNETIC RECONNECTION ================= -->
+    <section id="magnetic-reconnection">
+      <h2 class="section-title">Magnetic reconnection</h2>
+
+      <div class="prose">
+        <p>
+          Magnetic reconnection converts magnetic energy into plasma energy by rearranging
+          the field's topology, and it does so far faster than any simple resistive
+          estimate allows. Explaining <em>how fast</em>, from first principles rather than
+          by fitting simulations, has been a long-standing problem. It matters wherever
+          magnetic energy is released suddenly — solar flares, magnetar bursts, pulsar
+          wind termination, and black hole coronae.
+        </p>
+        <p>
+          With Yi-Hsin Liu at Dartmouth, I developed the first analytic theory of the
+          reconnection rate in the <strong>relativistic, magnetically dominated pair
+          plasmas</strong> relevant to compact objects, showing how the geometry of the
+          diffusion region itself sets the rate, and validating the prediction against
+          large-scale particle-in-cell simulations. Earlier, I derived the relation
+          between the <strong>energy conversion rate and the reconnection rate</strong> in
+          Petschek-type reconnection, which gives a way to connect a measured flare energy
+          budget to the underlying reconnection geometry.
+        </p>
+        <p>
+          Reconnection remains a thread through my current work: it is the mechanism that
+          dissipates the current sheet beyond the light cylinder, and the same questions
+          about rate and energy partition reappear there.
+        </p>
+      </div>
+
+      <!-- Figures to come — replace each placeholder with a <figure> block like the one
+           in the pulsar section above. -->
+      <div class="split" style="margin-top:2rem">
+        <figure>
+          <div class="placeholder">Figure to come<br>assets/img/reconnection-1.png</div>
+          <figcaption>Caption.</figcaption>
+        </figure>
+        <figure>
+          <div class="placeholder">Figure to come<br>assets/img/reconnection-2.png</div>
+          <figcaption>Caption.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    Matthew Goodbred · Department of Astrophysical Sciences, Princeton University ·
+    <a href="mailto:matthew.goodbred@gmail.com">matthew.goodbred@gmail.com</a>
+  </div>
+</footer>
+
+</body>
+</html>
