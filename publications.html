@@ -68,28 +68,33 @@
         </div>
         <div class="pub-body">
           <div class="pub-desc">
-            <!-- TODO: edit freely — this is a draft description. -->
             <p>
-              The closed zone of a pulsar magnetosphere is usually treated as inert: charge
-              settles into a disk-dome equilibrium and stays there. Using 3D particle-in-cell
-              simulations of aligned and oblique rotators, we show that this equilibrium is
-              unstable to the diocotron mode, and that it saturates into a long-lived
-              <em>m</em> = 1 pattern carrying a few percent of the central point charge.
+              The closed field line region of a pulsar magnetosphere is usually treated as inert and filled
+              with charge. 
+              However, weak pulsars should have regions in their magnetospheres where large zones of vacuum 
+              live in between charge-separated plasma. The charge between these vacuum 'gaps' does not rotate 
+              with the star, rendering it susceptible to the diocotron instability. Commonly encountered in non-neutral
+              laboratory plasmas, the diocotron instability leads to the formation of charge vortices and non-axisymmetric 
+              charge distributions.
+              Using 3D particle-in-cell simulations, we show that the instability in the equatorial disk of a pulsar saturates into a long-lived
+              <em>m</em> = 1 pattern.
             </p>
             <p>
-              We derive a quasilinear radial diffusion coefficient for the resulting
-              stochastic transport of charge across field lines, and use a multipole
-              expansion to translate the diocotron charge moments into perturbations of the
-              polar-cap potential and the emission beam. The predicted modulation timescales
-              and amplitudes are in the range associated with nulling, periodic amplitude
-              modulation, and drifting subpulses — suggesting that some radio variability is
-              set in the closed zone rather than at the polar cap.
+              Azimuthal electric fields from the diocotron mode kick charges radially across field lines,
+              leading to efficient diffusion of charges towards the outer edge of the closed zone. 
+              The result is a persistent, non-axisymmetric 'blob', spanning much of the closed magnetosphere, which super-rotates 
+              with respect to the star. The corresponding electric fields can exert time dependent perturbations on 
+              the polar cap where the radio emission is generated. Deflection of the emission beam and modulation of 
+              the polar cap potential drop by the diocotron mode might be related to variability in pulsar radio emission,
+              such as nulling and periodic amplitude modulation.
+             
             </p>
           </div>
           <figure>
             <!-- Swap this for the figure you actually want here. -->
             <img src="assets/img/pulsar-tilted.png"
-                 alt="Volume rendering of an oblique pulsar magnetosphere from a 3D particle-in-cell simulation.">
+                 alt="Volume rendering of an oblique pulsar magnetosphere from a 3D particle-in-cell simulation. The equatorial disk (blue)
+                 is sliced to show the internal structure.">
             <figcaption>
               <!-- TODO: replace with the real caption. -->
               Volume rendering of the charge density in an oblique rotator, showing the
@@ -116,22 +121,28 @@
           <div class="pub-desc">
             <!-- TODO: edit freely — this is a draft description. -->
             <p>
-              Reconnection in the magnetically dominated pair plasmas around compact objects
-              proceeds at a rate of roughly a tenth of the Alfvén speed, a value that
-              simulations reproduce but that no theory predicted from first principles.
+              Magnetic reconnection is often invoked to explain rapid release of magnetic energy
+              in astrophysical systems, from solar flares to magnetar bursts. To explain observations, however,
+              reconnection must proceed at a rate order of magnitude faster than classical theory predicts.
+              We develop a theory that can explain the fast reconnection rates in relativistic pair plasmas based on 
+              first-principles kinetic physics. 
             </p>
             <p>
-              We show that the rate is fixed by the geometry of the diffusion region itself:
-              the pressure of the reconnected field pushing back on the upstream plasma
-              limits how open the inflow region can become, and that constraint alone sets
-              the rate without any free parameter. The prediction matches large-scale
-              particle-in-cell simulations across the magnetization range relevant to
-              magnetars, pulsar winds, and black hole coronae.
+              As plasma flows into the reconnection region, is it accelerated 
+              in order to carry the currents which support the magnetic field reversal. When the background magnetic field 
+              dominates the rest mass energy density of the plasma, particles accelerated in the sheet attain enormous energies,
+              but little energy is left to enhance the thermal pressure of the plasma. The upstream magnetic field collapses inwards,
+              creating a compact diffusion region with fast inflow and outflow. Quantitative predictions of the pressure at the reconnection
+              site and the resulting fast reconnection rate are in excellent agreement with particle-in-cell simulations of relativistic reconnection. 
+              
             </p>
           </div>
           <figure>
-            <div class="placeholder">Add a figure at<br>assets/img/prl-2022.png</div>
-            <figcaption>Caption.</figcaption>
+            <img src="assets/img/reconnection_rate.png"
+                 alt="Reconnection rate">
+            <figcaption>
+              The predicted reconnection rate <em> R</em><sub>0</sub> as a function of the magnetization parameter &sigma;.
+            </figcaption>
           </figure>
         </div>
       </article>
@@ -151,23 +162,19 @@
         </div>
         <div class="pub-body">
           <div class="pub-desc">
-            <!-- TODO: edit freely — this is a draft description. -->
             <p>
-              Solar flare observations measure how quickly magnetic energy is converted into
-              plasma energy, but the quantity theory predicts is the reconnection rate — the
-              speed at which field lines are processed through the diffusion region. The two
-              are related, but not identical.
-            </p>
-            <p>
-              We derive the relation between them for Petschek-type reconnection and show
-              how the ratio depends on the opening angle of the outflow exhaust. This gives
-              a route from a measured flare energy budget back to the underlying
-              reconnection geometry.
+              In the Petschek model of magnetic reconnection, energy conversion 
+              occurs in shocks which bound the outflow exhaust. We solve for the energization
+              of the plasma across the shock structure using a Riemann solver across different parameter
+              regimes and compare it to the energy conversion in particle-in-cell simulations. 
+              The energy conversion rates agree reasonably well, but the shock structure cannot 
+              capture magnetic islands, which are important sites of energy conversion in reconnection. 
             </p>
           </div>
           <figure>
-            <div class="placeholder">Add a figure at<br>assets/img/pop-2021.png</div>
-            <figcaption>Caption.</figcaption>
+            <img src="assets/img/fig1_poprevision.png"
+                 alt="Reconnection cartoon">
+            <figcaption>A cartoon depicting the structure of Petschek reconnection.</figcaption>
           </figure>
         </div>
       </article>
